@@ -37,7 +37,7 @@ tdn_digits <- as.integer(tdn_flat)
 
 # Now, we have extracted, integer digits that we may perform math on. Use the "sum" function and "^3" operation to take the sum of the cubed three digits.
 tdn_sum_of_cubes <- sum(tdn_digits^3)
-#ZC - tahts so smart of ytou to include the cubing in the sum! 
+#ZC - thats so smart of you to include the cubing in the sum, wowow
 
 
 #4. Tdn Narcissism-Check result: In order to check and print if the number is indeed narcissistic, we need to set a condition statement based on the fact that the sum of the tdn's digit's cubes must equal the tdn itself to be considered a narcissistic number.
