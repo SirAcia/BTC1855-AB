@@ -17,6 +17,7 @@ if (is.na(as.numeric(tdn))) {
   #ZC - Maybe use a more substantial error message to indicate what causes the error?
   #ZC - Kinda like the sass of the response of just "no" though, thats funny lol 
 }
+# Good use of commenting for readability in the if, else snippet 
 
 
 #3. Check if the tdn is narcissistic: The tdn must be first split into digits to check if the sum of the cubes of these digits equates to the number itself.
