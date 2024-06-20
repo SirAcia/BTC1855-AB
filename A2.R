@@ -10,8 +10,7 @@ tdn <- readline(prompt = "Enter a three-digit positive number: ")
 # b. If the tdn is not numeric, print an error message and quit.
 # NOTE: instead of "quitting", I opted for the "stop" option to prevent R-studio itself from quitting entirely.
 if (is.na(as.numeric(tdn))) { 
-  # ZC - There's a typo here! when I try to source it, 
-  # "enter_tdn" is undefined, think you meant to put "tdn" :) 
+  # ZC - There's a typo here! when I try to source it, "enter_tdn" is undefined, think you meant to put "tdn", when it is just "tdn", the code runs perfectly :)  
   print("Error: Input is not numeric") 
   stop(save = "no")
   #ZC - Maybe use a more substantial error message to indicate what causes the error?
@@ -23,7 +22,7 @@ if (is.na(as.numeric(tdn))) {
 #3. Check if the tdn is narcissistic: The tdn must be first split into digits to check if the sum of the cubes of these digits equates to the number itself.
 # To extract the digits on their own, we need to first convert them the tdn into a character string.
 tdn_string <- as.character(tdn)
-#ZC - I checked to see and readline stores the input as a character type, tried runnign your code without this line and ti still works. Maybe this line isn't needed? 
+#ZC - I checked to see and readline stores the input as a character type, tried running your code without this line and it still works. Maybe this line isn't needed? 
 
 # After conversion, we can now extract the digits individually using the "strpsplit" function.
 tdn_split <- strsplit(tdn_string, split = "")
